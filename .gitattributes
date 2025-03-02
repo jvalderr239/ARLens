@@ -1,0 +1,50 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Rust files
+*.rs text diff=rust
+
+# Swift files
+*.swift text diff=swift
+*.pbxproj merge=union
+
+# Objective-C files
+*.m text diff=objc
+*.h text diff=objc
+
+# Metal shaders
+*.metal text
+
+# Binary files (no line-ending conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flac binary
+*.zip binary
+*.tar.gz binary
+*.rar binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+
+# Xcode project files
+*.xcodeproj linguist-vendored
+*.xcworkspace linguist-vendored
+*.xcassets linguist-vendored
+
+# Lock files
+Cargo.lock text
+Podfile.lock text
+
+# Documents
+*.md text diff=markdown
+*.txt text
+*.rtf diff=astextplain

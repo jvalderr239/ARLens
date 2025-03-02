@@ -1,0 +1,8 @@
+{
+  "rust-analyzer.cargo.target": "aarch64-apple-ios",
+  "rust-analyzer.check.allTargets": false,
+  "rust-analyzer.check.extraArgs": [
+      "--target",
+      "aarch64-apple-ios"
+  ]
+}

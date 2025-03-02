@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Build Rust for iOS",
+          "type": "shell",
+          "command": "cargo build --target aarch64-apple-ios --release",
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
+      },
+      {
+          "label": "Open Xcode Project",
+          "type": "shell",
+          "command": "open ios/RustARIOS/RustARIOS.xcodeproj",
+          "problemMatcher": []
+      }
+  ]
+}

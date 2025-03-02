@@ -1,9 +1,20 @@
-# Rust specific ignores
+# Git
+.git
+.gitignore
+.gitattributes
+.github
+
+# Docker
+.docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Rust
 /target/
 **/*.rs.bk
-Cargo.lock
 
-# macOS specific ignores
+# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -17,7 +28,7 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
-# iOS specific ignores
+# iOS
 ## Build generated
 build/
 DerivedData/
@@ -38,6 +49,8 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 *.xcuserstate
+ios/*.xcodeproj/project.xcworkspace/xcuserdata
+ios/*.xcworkspace/xcuserdata
 
 ## Obj-C/Swift specific
 *.hmap
@@ -45,41 +58,19 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
 # Swift Package Manager
 .build/
 
 # CocoaPods
-#
-# We recommend checking the Pods directory into your repository
-# unless you're using a Workspace and multiple targets.
-#
 Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
 
 # Carthage
 Carthage/Build
 
-# fastlane
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
-
-# Code Injection
-iOSInjectionProject/
-
-# VS Code specific ignores
+# VS Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # Environment files
 .env
@@ -93,6 +84,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Generated docs
+# Documentation
 /docs/book
 /docs/output
+README.md
+LICENSE
+*.md
+
+# Test files
+**/*_test.rs
+**/*.test.rs
+
+# Misc
+.editorconfig
+.idea
+*.swp
+*.swo
